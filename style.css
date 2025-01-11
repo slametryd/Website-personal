@@ -1,0 +1,718 @@
+/* google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    font-family: "Sora", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+/* Variabel color */
+
+:root {
+    --text-color: #121212;
+    --bg-color: #F5F5F5 ;
+    --footer-color: #e3e3e3;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.iconNavbar {
+    display: none;
+}
+
+/* Menyusun navbar dengan flexbox */  
+.header {
+    width: 100%;
+} 
+.navbar ul {
+    top: 0;
+    left: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+.header .sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+}
+.navbar a:hover {
+    color: var(--footer-color);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.home {
+    margin-top: 30px;
+}
+
+.home h1{
+    color: var(--text-color);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.home h3 {
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+}
+.home h3 span {
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 0 9px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.home p {
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.images {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 30%;
+    height: auto;
+
+}
+
+.about {
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.about {
+    box-shadow:  0 4px 15px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
+    background: var(--footer-color);
+
+    box-sizing: border-box;
+    align-content: center;
+    width: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contentAbout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contentAbout{ 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    height: auto;        
+    box-sizing: border-box;
+}
+
+.kerja, .school {
+    padding: 10px;
+
+}
+
+.contentAbout p {
+    text-align: center;
+    padding: 10px;
+}
+
+.skill {
+    padding: 20px;
+}
+
+.skil h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.skil h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.skil p {
+   display: none;
+}
+
+.contentSkill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.contentSkill a i {
+    font-size: 6rem;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+
+.contentSkill :hover {
+    color: var(--footer-color);
+    transition: 0.5s;
+}
+
+
+
+
+.portfolio {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Menata heading dalam .porto */
+.porto h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+/* Menata container .contentPorto */
+.contentPorto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Menata setiap item portfolio (porto1, porto2, porto3) */
+.porto1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.porto1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 0;
+}
+
+/* Menata teks di dalam porto */
+.porto1 h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Menata paragraf di dalam porto */
+.porto1 p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Menata tombol input submit */
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.porto1:hover, .porto2:hover, .porto3:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.contact {
+    padding-top: 20px;
+}
+
+.hederContact h3 {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.contact .contactContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 70%;
+    margin: 0 auto;
+
+}
+.leftArea {
+    display: flex;
+    flex-direction: column;         
+    justify-content: center;               
+    width: 60%;
+    padding: 20px;
+    padding-left: 0;
+
+}
+
+.leftArea textarea {
+    width: 60%;
+}
+.rightArea {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.rightArea img {
+    width: 300px;
+    height: 300px;
+}
+
+.inputBox input, .inputBox textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: var(--footer-color);
+    border-radius: 0.6rem;
+    margin: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.inputBox textarea {
+    min-height: 110px;
+    min-width: 100%;
+    resize: none;
+   
+}
+.button input {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    margin: 10px 0 ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button input:hover {
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+.footer {
+    padding: 20px 0;
+}
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footerText {
+    font-size: 1rem;
+
+}
+
+.iconFooter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.iconFooter a{
+    color: var(--text-color);
+}
+
+.iconFooter a:hover {
+    color: var(--footer-color);
+
+}
+
+
+
+
+/* media query */
+
+
+/* Media Query untuk perangkat dengan lebar maksimal 768px (Tablet dan Mobile) */
+@media (max-width: 768px) {
+
+
+    .navbar li {
+        margin: px 0;
+    }
+
+    .header .sticky {
+        width: 100%; 
+        left: 0;
+        transform: none; 
+    }
+
+    .home h1 {
+        font-size: 2.5rem; 
+    }
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home h3 {
+        font-size: 1.5rem;
+    }
+
+    .images img {
+        width: 70%; 
+        height: auto; 
+    }
+
+    .about, .skill, .portfolio, .contact {
+        padding: 10px; /* Mengurangi padding untuk layar kecil */
+    }
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    .contentSkill {
+        gap: 20px;
+    }
+    .skil h1 {
+        font-size: 2.5rem;
+    }
+    .skill .contentSkill a i p{
+        font-size: 8rem;
+    }
+    .contentPorto .porto1 {
+        width: 100%;
+    }
+
+    .contentPorto, .contact .contactContent {
+        flex-direction: column; 
+        gap: 30px; }
+
+    .rightArea img {
+        width: 200px;
+        height: 200px;
+    }
+
+   
+    .leftArea, .rightArea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .button input {
+        width: 100%; 
+        padding: 15px 20px;
+    }
+    .rightArea {
+        order: -1;
+    }
+    .rightArea img{
+        width: 70%;
+        height: auto;
+    }
+
+
+    .footerContent {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .iconFooter {
+        margin: 15px 0;
+        gap: 10px;
+    }
+
+    .footerText {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+/* Media Query untuk perangkat dengan lebar maksimal 480px (Mobile) */
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 1.8rem;
+    }
+
+    .home h3 {
+        font-size: 1rem;
+    }
+    .home p {
+        font-size: .7rem;
+        width: 80%;
+    }
+
+    .header .sticky {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        border-radius: 0.6rem;
+        margin: 10px 0;
+        padding: 10px;
+        z-index: 0;
+    
+}
+.navbar ul li {
+        display: none;
+    }
+    .iconNavbar {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 15px;
+        margin: 10px 0;
+        z-index: 10;
+}
+    .iconNavbar a {
+        font-size: 1.5rem;
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+    .iconNavbar a:hover {
+        color: var(--footer-color);
+        
+    }
+    .images img {
+        width: 60%;
+        height: auto;
+    }
+.about h1 {
+    font-size: 1.8rem;
+}
+.contentAbout {
+    flex-direction: column;
+    gap: 10px;
+}
+    .about .education h4  {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .about .education  h3 {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .about .education  p{
+        font-size: .7rem;
+    }
+    .about .work h4 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .about .work h3 {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .about .work p {
+        font-size: .7rem;
+    }
+    .about .work {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .about, .skill, .portfolio, .contact {
+        padding: 10px;
+    }
+
+    /* Menyusun elemen .contentSkill secara vertikal */
+    .skil h1{
+        font-size: 1.8rem;
+    }
+
+    .skil h4 {
+        font-size: 1rem;
+    }
+    .skil p {
+        text-align: center;
+        font-size: .7rem;
+        padding: 10px;
+}
+    .contentSkill {
+        gap: 5px;
+       
+    }
+    .porto h1 {
+        font-size: 1.8rem;
+    }
+    .porto1 h4 {
+        font-size: 1rem;
+    }
+    .porto1 p {
+        font-size: .7rem;
+    }
+    .porto1 img {
+        width: 200px;
+    }
+    .contentSkill a i {
+        font-size: 3rem;
+        margin: 10px;
+
+    }
+    .contentSkill p{
+        display: none;
+    }
+    .contentPorto .porto1 {
+        width: 100%;
+    }
+
+    .contentPorto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .hederContact h3 {
+        font-size: 1.8rem;
+    }
+    .contactContent {
+        flex-direction: column;
+    }
+    .rightArea {
+        order: -1;
+    }
+        
+    .inputBox input, .inputBox textarea {
+        padding: 12px;
+        font-size: 0.7rem;
+    }
+    .button input {
+        font-size: .7rem;
+        padding: 12px 15px;
+    }
+    .footer-text {
+        padding-top: 0;
+    }
+
+    .iconFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .iconFooter a {
+        font-size: 2rem;
+    }
+    .footerContent p{
+        font-size: .7rem;
+    }
+}
